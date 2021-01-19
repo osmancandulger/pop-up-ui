@@ -15,8 +15,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #f7f7f7;
 }
 
@@ -38,27 +39,23 @@ body {
   border-radius: 10px;
 }
 
-.container .icon,
-.login-container .icon {
+.icon {
   margin-top: 35px;
 }
 
-.container .text-area p,
-.login-container .text-area p {
+.text-area p:nth-child(1) {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24.15px;
   text-align: center;
   margin-top: 29px;
 }
 
-.container .buttons,
-.login-container .buttons {
+.buttons {
   height: 100%;
 }
 
-.container .buttons button,
-.login-container .buttons button {
+.buttons .button1 {
   width: 160px;
   height: 40px;
   border-radius: 5px;
@@ -70,19 +67,33 @@ body {
   cursor: pointer;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  -webkit-box-shadow: 5px 5px 30px -2px rgba(244, 106, 88, 0.65);
+          box-shadow: 5px 5px 30px -2px rgba(244, 106, 88, 0.65);
 }
 
-.container .buttons button:hover,
-.login-container .buttons button:hover {
+.buttons button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.login-button {
+.login-container {
+  margin-top: 260px;
+  margin-left: 25px;
+}
+
+.login-container .login-text {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 24.15px;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.login-container .login-button {
   width: 160px;
   height: 40px;
   border-radius: 5px;
-  margin-top: 45px;
+  margin-top: 65px;
   background-color: #1c1b5e;
   color: #ffffff;
   border: none;
@@ -90,5 +101,7 @@ body {
   cursor: pointer;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  -webkit-box-shadow: 5px 5px 30px -2px rgba(28, 27, 93, 0.6);
+          box-shadow: 5px 5px 30px -2px rgba(28, 27, 93, 0.6);
 }
 /*# sourceMappingURL=style.css.map */
