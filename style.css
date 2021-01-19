@@ -10,67 +10,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 100vh;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 320px;
-  height: 310px;
-  background-color: #e4e9f8;
-  border-radius: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #f7f7f7;
 }
 
-.container .icon {
-  margin-top: 35px;
-}
-
-.container .text-area p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24.15px;
-  text-align: center;
-  margin-top: 29px;
-}
-
-.container .buttons {
-  height: 100%;
-}
-
-.container .buttons button:nth-child(1) {
-  width: 160px;
-  height: 40px;
-  border-radius: 5px;
-  margin-top: 45px;
-  background-color: #ed6755;
-  color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
-}
-
-.container .buttons button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
+.container,
 .login-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +34,61 @@ body {
           align-items: center;
   width: 320px;
   height: 310px;
-  background-color: #e4e9f8;
+  background-color: #ffffff;
   border-radius: 10px;
+}
+
+.container .icon,
+.login-container .icon {
+  margin-top: 35px;
+}
+
+.container .text-area p,
+.login-container .text-area p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24.15px;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.container .buttons,
+.login-container .buttons {
+  height: 100%;
+}
+
+.container .buttons button,
+.login-container .buttons button {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 45px;
+  background-color: #ed6755;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.container .buttons button:hover,
+.login-container .buttons button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.login-button {
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 45px;
+  background-color: #1c1b5e;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 /*# sourceMappingURL=style.css.map */
