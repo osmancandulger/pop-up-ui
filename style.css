@@ -104,4 +104,12 @@ body {
   -webkit-box-shadow: 5px 5px 30px -2px rgba(28, 27, 93, 0.6);
           box-shadow: 5px 5px 30px -2px rgba(28, 27, 93, 0.6);
 }
+
+.header {
+  width: 100%;
+}
+
+.header svg {
+  float: right;
+}
 /*# sourceMappingURL=style.css.map */
